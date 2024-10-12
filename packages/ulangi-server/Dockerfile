@@ -11,10 +11,10 @@ COPY scripts scripts
 RUN npm install --only=production
 RUN npm run install-packed-local
 RUN rm -f .npmrc
-
+RUN npm install -g pm2
 # Bundle app source
 COPY . .
 
 EXPOSE 8082
 
-CMD [ "npm", "start" ]
+CMD [ "pm2-runtime", "dist/index.js" ]
