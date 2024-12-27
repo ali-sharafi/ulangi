@@ -5,7 +5,7 @@
  * See LICENSE or go to https://www.gnu.org/licenses/gpl-3.0.txt
  */
 
-import { Navigation } from '@ulangi/react-native-navigation';
+import { Navigation } from 'react-native-navigation';
 import { ScreenName } from '@ulangi/ulangi-common/enums';
 import { EventBusFactory, EventFacade } from '@ulangi/ulangi-event';
 import {

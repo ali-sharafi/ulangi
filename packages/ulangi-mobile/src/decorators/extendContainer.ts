@@ -6,7 +6,7 @@
  */
 
 import { Constructor } from '@ulangi/extended-types';
-import { Navigation } from '@ulangi/react-native-navigation';
+import { Navigation } from 'react-native-navigation';
 import { LightBoxState, ScreenState, Theme } from '@ulangi/ulangi-common/enums';
 import SplashScreen from 'react-native-splash-screen';
 

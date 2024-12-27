@@ -5,7 +5,7 @@
  * See LICENSE or go to https://www.gnu.org/licenses/gpl-3.0.txt
  */
 
-import { Navigation, Options } from '@ulangi/react-native-navigation';
+import { Navigation, Options } from 'react-native-navigation';
 import * as _ from 'lodash';
 import { Platform } from 'react-native';
 

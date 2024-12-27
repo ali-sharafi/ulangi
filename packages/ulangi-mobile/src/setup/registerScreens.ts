@@ -6,7 +6,7 @@
  */
 
 import { Constructor } from '@ulangi/extended-types';
-import { Navigation } from '@ulangi/react-native-navigation';
+import { Navigation } from 'react-native-navigation';
 import * as _ from 'lodash';
 
 import { Provider } from '../Provider';

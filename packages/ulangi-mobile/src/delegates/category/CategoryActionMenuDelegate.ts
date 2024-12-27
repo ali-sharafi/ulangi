@@ -6,7 +6,7 @@
  */
 
 import { assertExists } from '@ulangi/assert';
-import { Options } from '@ulangi/react-native-navigation';
+import { Options } from 'react-native-navigation';
 import {
   LightBoxState,
   ScreenName,

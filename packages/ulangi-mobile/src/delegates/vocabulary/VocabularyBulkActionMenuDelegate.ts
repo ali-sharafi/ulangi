@@ -6,7 +6,7 @@
  */
 
 import { DeepPartial } from '@ulangi/extended-types';
-import { Options } from '@ulangi/react-native-navigation';
+import { Options } from 'react-native-navigation';
 import { ActionType, createAction } from '@ulangi/ulangi-action';
 import {
   LightBoxState,

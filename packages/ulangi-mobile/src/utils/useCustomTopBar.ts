@@ -1,4 +1,4 @@
-import { OptionsTopBar } from '@ulangi/react-native-navigation';
+import { OptionsTopBar } from 'react-native-navigation';
 import { CustomViewName, ScreenName } from '@ulangi/ulangi-common/enums';
 import * as _ from 'lodash';
 

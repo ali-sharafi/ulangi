@@ -1,4 +1,4 @@
-import { Options } from '@ulangi/react-native-navigation';
+import { Options } from 'react-native-navigation';
 import { ScreenName, Theme } from '@ulangi/ulangi-common/enums';
 import {
   ObservableScreen,

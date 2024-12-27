@@ -5,7 +5,7 @@
  * See LICENSE or go to https://www.gnu.org/licenses/gpl-3.0.txt
  */
 
-import { Options } from '@ulangi/react-native-navigation';
+import { Options } from 'react-native-navigation';
 import { ScreenName } from '@ulangi/ulangi-common/enums';
 import {
   ObservableReflexGameState,

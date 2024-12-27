@@ -6,7 +6,7 @@
  */
 
 import { assertExists } from '@ulangi/assert';
-import { Navigation, Options } from '@ulangi/react-native-navigation';
+import { Navigation, Options } from 'react-native-navigation';
 import { LightBoxState, ScreenName } from '@ulangi/ulangi-common/enums';
 import { SelectionMenu } from '@ulangi/ulangi-common/interfaces';
 import {

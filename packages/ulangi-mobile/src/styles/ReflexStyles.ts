@@ -5,7 +5,7 @@
  * See LICENSE or go to https://www.gnu.org/licenses/gpl-3.0.txt
  */
 
-import { Options } from '@ulangi/react-native-navigation';
+import { Options } from 'react-native-navigation';
 import { ButtonSize } from '@ulangi/ulangi-common/enums';
 import { ButtonStyles } from '@ulangi/ulangi-common/interfaces';
 import * as _ from 'lodash';

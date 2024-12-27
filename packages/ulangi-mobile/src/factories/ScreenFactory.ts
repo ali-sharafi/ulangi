@@ -5,7 +5,7 @@
  * See LICENSE or go to https://www.gnu.org/licenses/gpl-3.0.txt
  */
 
-import { Options } from '@ulangi/react-native-navigation';
+import { Options } from 'react-native-navigation';
 import { EventBus } from '@ulangi/ulangi-event';
 import { Observer } from '@ulangi/ulangi-observable';
 
