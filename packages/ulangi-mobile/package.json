@@ -3,7 +3,7 @@
 	"name": "@ulangi/ulangi-mobile",
 	"version": "3.21.1",
 	"scripts": {
-		"postbootstrap": "cd ios && pod install",
+		"postbootstrap": "if [ \"$(uname)\" = \"Darwin\" ]; then cd ios && pod install; fi",
 		"postinstall": "patch-package",
 		"android": "react-native run-android --variant devDebug --appIdSuffix dev",
 		"ios": "react-native run-ios --scheme UlangiMobile-Dev",
