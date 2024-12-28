@@ -21,7 +21,7 @@
   "license": "GPL-3.0",
   "dependencies": {
     "@ulangi/extended-types": "^1.0.0",
-    "@ulangi/ulangi-common": "file:../ulangi-common",
+    "@ulangi/ulangi-common": "^3.21.0",
     "@ulangi/wiktionary-core": "^2.2.1"
   },
   "devDependencies": {
