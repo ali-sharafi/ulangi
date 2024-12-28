@@ -13,7 +13,7 @@ import {
   VocabularyWriting,
 } from '@ulangi/ulangi-common/interfaces';
 import * as _ from 'lodash';
-import * as moment from 'moment';
+import moment from 'moment';
 
 import { VocabularyRow } from '../interfaces/VocabularyRow';
 

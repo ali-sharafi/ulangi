@@ -10,7 +10,7 @@ import { SetBuilder } from '@ulangi/ulangi-common/builders';
 import { SetExtraDataName } from '@ulangi/ulangi-common/enums';
 import { Set } from '@ulangi/ulangi-common/interfaces';
 import { mockCurrentTime } from '@ulangi/ulangi-common/testing-utils';
-import * as moment from 'moment';
+import moment from 'moment';
 import * as sqlite3 from 'sqlite3';
 import * as tmp from 'tmp-promise';
 
@@ -20,9 +20,9 @@ import { ModelFactory } from '../factories/ModelFactory';
 import { IncompatibleSetModel } from './IncompatibleSetModel';
 import { SetModel } from './SetModel';
 
-const { DatabaseEventBus: DatabaseEventBusMock } = jest.genMockFromModule(
+const DatabaseEventBusMock = jest.genMockFromModule(
   '../event-buses/DatabaseEventBus'
-);
+) as typeof DatabaseEventBus;
 
 describe('IncompatibleSetModel', (): void => {
   describe('Tests start with connected database', (): void => {

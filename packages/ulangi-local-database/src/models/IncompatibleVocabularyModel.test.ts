@@ -20,9 +20,9 @@ import { IncompatibleVocabularyModel } from './IncompatibleVocabularyModel';
 import { SetModel } from './SetModel';
 import { VocabularyModel } from './VocabularyModel';
 
-const { DatabaseEventBus: DatabaseEventBusMock } = jest.genMockFromModule(
+const DatabaseEventBusMock = jest.genMockFromModule(
   '../event-buses/DatabaseEventBus'
-);
+) as typeof DatabaseEventBus;
 
 describe('IncompatibileVocabularyModel', (): void => {
   describe('Tests start with connected database', (): void => {

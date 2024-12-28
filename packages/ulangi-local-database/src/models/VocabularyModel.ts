@@ -16,7 +16,7 @@ import {
 } from '@ulangi/ulangi-common/enums';
 import { Definition, Vocabulary } from '@ulangi/ulangi-common/interfaces';
 import * as _ from 'lodash';
-import * as moment from 'moment';
+import moment from 'moment';
 import * as squel from 'squel';
 
 import { VocabularyRowConverter } from '../converters/VocabularyRowConverter';

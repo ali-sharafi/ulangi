@@ -10,7 +10,7 @@ import * as EventEmitter from 'eventemitter3';
 import { DatabaseEvent } from '../enums/DatabaseEvent';
 
 export class DatabaseEventBus {
-  private eventEmitter = new EventEmitter();
+  private eventEmitter = new EventEmitter.default();
 
   public publish(databaseEvent: DatabaseEvent): void {
     this.eventEmitter.emit('DATABASE_EVENT', databaseEvent);

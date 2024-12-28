@@ -12,7 +12,7 @@ import { SetStatus } from '@ulangi/ulangi-common/enums';
 import { Set } from '@ulangi/ulangi-common/interfaces';
 import { SetExtraDataItem } from '@ulangi/ulangi-common/types';
 import * as _ from 'lodash';
-import * as moment from 'moment';
+import moment from 'moment';
 import * as squel from 'squel';
 
 import { SetRowConverter } from '../converters/SetRowConverter';

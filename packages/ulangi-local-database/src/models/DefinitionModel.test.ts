@@ -20,7 +20,7 @@ import {
 import { Definition, Set, Vocabulary } from '@ulangi/ulangi-common/interfaces';
 import { mockCurrentTime } from '@ulangi/ulangi-common/testing-utils';
 import * as _ from 'lodash';
-import * as moment from 'moment';
+import moment from 'moment';
 import * as sqlite3 from 'sqlite3';
 import * as tmp from 'tmp-promise';
 

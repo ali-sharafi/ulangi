@@ -7,7 +7,7 @@
 
 import { VocabularyStatus } from '@ulangi/ulangi-common/enums';
 import { mockCurrentTime } from '@ulangi/ulangi-common/testing-utils';
-import * as moment from 'moment';
+import moment from 'moment';
 
 import { VocabularyRowPreparer } from './VocabularyRowPreparer';
 

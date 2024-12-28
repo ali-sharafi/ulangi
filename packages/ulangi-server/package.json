@@ -8,7 +8,7 @@
     "pack-local": "./scripts/pack-local.sh",
     "install-packed-local": "./scripts/install-packed-local.sh",
     "install-local": "npm run pack-local && npm run install-packed-local",
-    "lint": "eslint --ext .ts src/",
+    "lint": "eslint src/",
     "lint-fix": "eslint --fix --ext .ts src/",
     "clean": "rm -rf ./dist",
     "compile": "tsc -noUnusedLocals -noUnusedParameters -p ./",
@@ -107,7 +107,7 @@
     "style-loader": "^0.23.1",
     "ts-jest": "^23.10.5",
     "ts-node": "^7.0.1",
-    "typescript": "^3.5.2",
+    "typescript": "^3.5.3",
     "webpack": "^4.28.4",
     "webpack-cli": "^3.2.1"
   }

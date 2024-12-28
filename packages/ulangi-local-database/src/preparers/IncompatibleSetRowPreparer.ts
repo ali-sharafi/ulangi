@@ -8,7 +8,7 @@
 import { DeepPartial } from '@ulangi/extended-types';
 import { AbstractPreparer } from '@ulangi/ulangi-common/preparers';
 import * as Joi from 'joi';
-import * as moment from 'moment';
+import moment from 'moment';
 
 import { IncompatibleSetRow } from '../interfaces/IncompatibleSetRow';
 

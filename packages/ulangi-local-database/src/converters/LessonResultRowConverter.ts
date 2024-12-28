@@ -6,7 +6,7 @@
  */
 
 import { LessonResult } from '@ulangi/ulangi-common/interfaces';
-import * as moment from 'moment';
+import moment from 'moment';
 
 import { LessonResultRow } from '../interfaces/LessonResultRow';
 

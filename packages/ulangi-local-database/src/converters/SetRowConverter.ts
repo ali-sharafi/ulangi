@@ -9,7 +9,7 @@ import { DeepPartial } from '@ulangi/extended-types';
 import { Set } from '@ulangi/ulangi-common/interfaces';
 import { SetExtraDataItem } from '@ulangi/ulangi-common/types';
 import * as _ from 'lodash';
-import * as moment from 'moment';
+import moment from 'moment';
 
 import { SetRow } from '../interfaces/SetRow';
 

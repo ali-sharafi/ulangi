@@ -23,9 +23,9 @@ import { DirtySetFieldRow } from '../interfaces/DirtySetFieldRow';
 import { DirtySetModel } from './DirtySetModel';
 import { SetModel } from './SetModel';
 
-const { DatabaseEventBus: DatabaseEventBusMock } = jest.genMockFromModule(
+const DatabaseEventBusMock = jest.genMockFromModule(
   '../event-buses/DatabaseEventBus'
-);
+) as typeof DatabaseEventBus;
 
 describe('DirtySetModel', (): void => {
   describe('Tests start with connected database', (): void => {

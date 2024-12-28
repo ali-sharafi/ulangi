@@ -10,7 +10,7 @@ import { VocabularyWriting } from '@ulangi/ulangi-common/interfaces';
 import { AbstractPreparer } from '@ulangi/ulangi-common/preparers';
 import * as Joi from 'joi';
 import * as _ from 'lodash';
-import * as moment from 'moment';
+import moment from 'moment';
 
 import {
   VocabularyWritingRow,

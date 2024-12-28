@@ -7,7 +7,7 @@
 
 import { SQLiteDatabase, SQLiteDatabaseAdapter } from '@ulangi/sqlite-adapter';
 import { RemoteConfig } from '@ulangi/ulangi-common/interfaces';
-import * as moment from 'moment';
+import moment from 'moment';
 import * as sqlite3 from 'sqlite3';
 import * as tmp from 'tmp-promise';
 

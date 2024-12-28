@@ -12,7 +12,7 @@ import { VocabularyStatus } from '@ulangi/ulangi-common/enums';
 import { Set, Vocabulary } from '@ulangi/ulangi-common/interfaces';
 import { mockCurrentTime } from '@ulangi/ulangi-common/testing-utils';
 import * as _ from 'lodash';
-import * as moment from 'moment';
+import moment from 'moment';
 import * as sqlite3 from 'sqlite3';
 import * as tmp from 'tmp-promise';
 
@@ -25,9 +25,9 @@ import { DirtyVocabularyModel } from './DirtyVocabularyModel';
 import { SetModel } from './SetModel';
 import { VocabularyModel } from './VocabularyModel';
 
-const { DatabaseEventBus: DatabaseEventBusMock } = jest.genMockFromModule(
+const DatabaseEventBusMock = jest.genMockFromModule(
   '../event-buses/DatabaseEventBus'
-);
+) as typeof DatabaseEventBus;
 
 describe('DirtyVocabularyModel', (): void => {
   describe('Tests start with connected database', (): void => {
@@ -42,7 +42,9 @@ describe('DirtyVocabularyModel', (): void => {
 
     beforeEach(
       async (): Promise<void> => {
-        mockedDatabaseEventBus = new DatabaseEventBusMock();
+        mockedDatabaseEventBus = new DatabaseEventBusMock() as jest.Mocked<
+          DatabaseEventBus
+        >;
 
         databaseFacade = new DatabaseFacade(new SQLiteDatabaseAdapter(sqlite3));
         await databaseFacade.connectUserDb((await tmp.file()).path);
