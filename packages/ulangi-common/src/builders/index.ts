@@ -12,6 +12,6 @@ export { VocabularyWritingBuilder } from './VocabularyWritingBuilder';
 export { SetBuilder } from './SetBuilder';
 export { SetExtraDataItemBuilder } from './SetExtraDataItemBuilder';
 export { UserBuilder } from './UserBuilder';
-export { UserExtraDataItemBuilder } from './UserExtraDataItemBuilder';
+export { UserExtraDataItemBuilder } from './UserExtradataItemBuilder';
 export { PurchaseBuilder } from './PurchaseBuilder';
 export { LessonResultBuilder } from './LessonResultBuilder';

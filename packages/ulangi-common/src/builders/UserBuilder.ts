@@ -14,7 +14,7 @@ import { UserMembership } from '../enums/UserMembership';
 import { UserStatus } from '../enums/UserStatus';
 import { User } from '../interfaces/general/User';
 import { UserExtraDataItem } from '../types/UserExtraDataItem';
-import { UserExtraDataItemBuilder } from './UserExtraDataItemBuilder';
+import { UserExtraDataItemBuilder } from './UserExtradataItemBuilder';
 
 export class UserBuilder {
   private userExtraDataItemBuilder = new UserExtraDataItemBuilder();
