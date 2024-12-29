@@ -71,9 +71,12 @@ export class AuthDatabaseMigrationRunner {
           if (results.length === 0) {
             resolve(0);
           } else {
-            resolve(
-              Joi.attempt(_.get(_.first(results), 'value'), Joi.number())
-            );
+            const value = _.get(_.first(results), 'value');
+            if (value !== undefined) {
+              resolve(Joi.attempt(value, Joi.number()));
+            } else {
+              resolve(0);
+            }
           }
         } catch (error) {
           reject(error);

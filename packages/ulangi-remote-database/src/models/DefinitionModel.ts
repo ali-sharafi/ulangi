@@ -78,7 +78,7 @@ export class DefinitionModel {
     ][]
   ): Promise<void[]> {
     return new Promise(
-      async (resolve, reject): Promise<void> => {
+      async (_resolve, reject): Promise<void> => {
         try {
           const queries: Promise<void | void[]>[] = [];
 
@@ -106,7 +106,6 @@ export class DefinitionModel {
           );
 
           await Promise.all(queries);
-          resolve();
         } catch (error) {
           reject(error);
         }

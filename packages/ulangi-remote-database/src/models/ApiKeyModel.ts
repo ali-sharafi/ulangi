@@ -52,7 +52,6 @@ export class ApiKeyModel {
               expiredAt: apiKeyRow.expiredAt,
             });
           }
-          resolve();
         } catch (error) {
           reject(error);
         }
@@ -99,7 +98,6 @@ export class ApiKeyModel {
               )
             );
           }
-          resolve();
         } catch (error) {
           reject(error);
         }
@@ -124,8 +122,6 @@ export class ApiKeyModel {
           );
 
           resolve(result.length > 0);
-
-          resolve();
         } catch (error) {
           reject(error);
         }
