@@ -4,7 +4,7 @@ import { Set } from '@ulangi/ulangi-common/interfaces';
 import { DownloadSpecificSetsResponseResolver } from '@ulangi/ulangi-common/resolvers';
 import { SetExtraDataItem } from '@ulangi/ulangi-common/types';
 import Axios from 'axios';
-import * as moment from 'moment';
+import moment from 'moment';
 
 import { resolveEnv } from '../utils/resolveEnv';
 import { signUpRandomly } from '../utils/signUpRandomly';

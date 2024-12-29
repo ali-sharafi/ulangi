@@ -17,7 +17,7 @@ import {
 } from '@ulangi/ulangi-common/interfaces';
 import { SignUpRequestResolver } from '@ulangi/ulangi-common/resolvers';
 import { DatabaseFacade, UserModel } from '@ulangi/ulangi-remote-database';
-import * as moment from 'moment';
+import moment from 'moment';
 import * as uuid from 'uuid';
 
 import { AuthenticatorFacade } from '../../facades/AuthenticatorFacade';

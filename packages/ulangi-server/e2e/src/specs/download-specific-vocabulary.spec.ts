@@ -6,7 +6,7 @@ import {
 import { Definition, Vocabulary } from '@ulangi/ulangi-common/interfaces';
 import { DownloadSpecificVocabularyResponseResolver } from '@ulangi/ulangi-common/resolvers';
 import Axios from 'axios';
-import * as moment from 'moment';
+import moment from 'moment';
 
 import { resolveEnv } from '../utils/resolveEnv';
 import { signUpRandomly } from '../utils/signUpRandomly';

@@ -10,7 +10,7 @@ import {
   SendApiKeyResponse,
 } from '@ulangi/ulangi-common/interfaces';
 import { SendApiKeyRequestResolver } from '@ulangi/ulangi-common/resolvers';
-import * as moment from 'moment';
+import moment from 'moment';
 
 import { MailerAdapter } from '../../adapters/MailerAdapter';
 import { AuthenticationStrategy } from '../../enums/AuthenticationStrategy';

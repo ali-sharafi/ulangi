@@ -9,7 +9,7 @@ import {
 } from '@ulangi/ulangi-common/enums';
 import { UserExtraDataItem } from '@ulangi/ulangi-common/types';
 import Axios from 'axios';
-import * as moment from 'moment';
+import moment from 'moment';
 
 import { resolveEnv } from '../utils/resolveEnv';
 import { generateRandomEmail } from '../utils/generateRandomEmail';

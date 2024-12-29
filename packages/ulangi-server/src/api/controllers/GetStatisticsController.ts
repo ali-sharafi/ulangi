@@ -15,7 +15,7 @@ import {
   LessonResultModel,
 } from '@ulangi/ulangi-remote-database';
 import * as _ from 'lodash';
-import * as moment from 'moment';
+import moment from 'moment';
 
 import { AuthenticationStrategy } from '../../enums/AuthenticationStrategy';
 import { ControllerOptions } from '../../interfaces/ControllerOptions';

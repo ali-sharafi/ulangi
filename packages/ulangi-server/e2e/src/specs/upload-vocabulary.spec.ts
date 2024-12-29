@@ -3,7 +3,7 @@ import { Definition, Vocabulary } from '@ulangi/ulangi-common/interfaces';
 import { DownloadVocabularyResponseResolver } from '@ulangi/ulangi-common/resolvers';
 import Axios from 'axios';
 import * as _ from 'lodash';
-import * as moment from 'moment';
+import moment from 'moment';
 import * as querystring from 'query-string';
 
 import { resolveEnv } from '../utils/resolveEnv';

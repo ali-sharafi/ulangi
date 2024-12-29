@@ -13,7 +13,7 @@ import * as appRoot from 'app-root-path';
 import * as iap from 'in-app-purchase';
 import * as knex from 'knex';
 import * as _ from 'lodash';
-import * as moment from 'moment';
+import moment from 'moment';
 import * as path from 'path';
 
 import { PurchasedItemConverter } from '../converters/PurchasedItemConverter';

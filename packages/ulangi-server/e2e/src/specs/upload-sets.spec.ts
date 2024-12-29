@@ -5,7 +5,7 @@ import { DownloadSetsResponseResolver } from '@ulangi/ulangi-common/resolvers';
 import { SetExtraDataItem } from '@ulangi/ulangi-common/types';
 import Axios from 'axios';
 import * as _ from 'lodash';
-import * as moment from 'moment';
+import moment from 'moment';
 import * as querystring from 'query-string';
 
 import { resolveEnv } from '../utils/resolveEnv';

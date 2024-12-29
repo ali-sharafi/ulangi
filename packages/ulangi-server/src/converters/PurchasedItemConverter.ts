@@ -9,7 +9,7 @@ import { IapService } from '@ulangi/ulangi-common/enums';
 import { Purchase } from '@ulangi/ulangi-common/interfaces';
 import * as iap from 'in-app-purchase';
 import * as _ from 'lodash';
-import * as moment from 'moment';
+import moment from 'moment';
 
 export class PurchasedItemConverter {
   public convertToPurchase(

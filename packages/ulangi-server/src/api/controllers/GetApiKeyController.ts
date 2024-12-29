@@ -12,7 +12,7 @@ import {
 } from '@ulangi/ulangi-common/interfaces';
 import { GetApiKeyRequestResolver } from '@ulangi/ulangi-common/resolvers';
 import { ApiKeyModel, DatabaseFacade } from '@ulangi/ulangi-remote-database';
-import * as moment from 'moment';
+import moment from 'moment';
 import * as uuid from 'uuid';
 
 import { AuthenticationStrategy } from '../../enums/AuthenticationStrategy';
