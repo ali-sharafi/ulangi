@@ -38,7 +38,9 @@ export class NetworkSaga extends PublicSaga {
         > = yield call([this.netInfo, 'fetch']);
         yield put(
           createAction(ActionType.NETWORK__CHECK_CONNECTION_SUCCEEDED, {
-            isConnected: netInfoState.isConnected,
+            isConnected: netInfoState.isConnected
+              ? netInfoState.isConnected
+              : false,
           })
         );
       } catch (error) {
@@ -101,7 +103,7 @@ export class NetworkSaga extends PublicSaga {
     return eventChannel(
       (emit): (() => void) => {
         const listener = (state: NetInfoState): void => {
-          emit(state.isConnected);
+          emit(state.isConnected ? state.isConnected : false);
         };
 
         return this.netInfo.addEventListener(listener);

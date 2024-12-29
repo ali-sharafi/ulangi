@@ -1,6 +1,5 @@
 import * as RNFileSystem from 'react-native-fs';
 
-// eslint-disable-next-line
 export namespace FileSystem {
   export type DownloadResult = RNFileSystem.DownloadResult;
 }

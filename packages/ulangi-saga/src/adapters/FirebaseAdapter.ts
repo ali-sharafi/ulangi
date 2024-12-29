@@ -24,7 +24,6 @@ export class FirebaseAdapter {
     return this.firebase.auth().signOut();
   }
 
-  // eslint-disable-next-line
   public addListener(
     path: string,
     callback: RNFirebase.database.QuerySuccessCallback,
@@ -36,7 +35,6 @@ export class FirebaseAdapter {
       .on('value', callback, errorCallback);
   }
 
-  // eslint-disable-next-line
   public removeListener(
     path: string,
     callback: RNFirebase.database.QuerySuccessCallback
