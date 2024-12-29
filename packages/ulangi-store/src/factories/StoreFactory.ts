@@ -35,9 +35,11 @@ export class StoreFactory {
   private enableLogger(options?: ReduxLoggerOptions): void {
     // If no options provided, use the default logger
     if (typeof options !== 'undefined') {
-      this.middlewares = this.middlewares.concat(createLogger(options));
+      this.middlewares = this.middlewares.concat(createLogger(
+        options
+      ) as Middleware);
     } else {
-      this.middlewares = this.middlewares.concat(logger);
+      this.middlewares = this.middlewares.concat(logger as Middleware);
     }
   }
 
