@@ -23,7 +23,7 @@ export class CSVParser {
 
   public parse(csvString: string): readonly PublicSet[] {
     const parseResult = Papa.parse(csvString);
-    const data: string[][] = parseResult.data;
+    const data: string[][] = parseResult.data as string[][];
 
     const columnWidth = 3;
     const dividerWidth = 1;
