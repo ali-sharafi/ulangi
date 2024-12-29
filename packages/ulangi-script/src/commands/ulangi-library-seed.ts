@@ -167,18 +167,30 @@ async function exec(): Promise<void> {
           const fileStream = fs.createReadStream(inputFile);
           const converter = createWiktionaryPageConverter();
 
-          fileStream.pipe(converter.stdin);
-          converter.stdout.pipe(uploader.stdin);
+          if (converter.stdin) {
+            fileStream.pipe(converter.stdin);
+          } else {
+            throw new Error('converter.stdin is null');
+          }
+          if (uploader.stdin && converter.stdout) {
+            converter.stdout.pipe(uploader.stdin);
+          } else {
+            throw new Error('uploader.stdin is null');
+          }
         } else {
-          uploader.stdin.write(parseCSVFile(inputFile));
-          uploader.stdin.end();
+          if (uploader.stdin) {
+            uploader.stdin.write(parseCSVFile(inputFile));
+            uploader.stdin.end();
+          }
         }
 
         await waitForProcessToEnd(uploader);
-        console.log(`Upload ${path.basename(inputFile)} completed.`);
+        console.log({
+          message: `Upload ${path.basename(inputFile)} completed.`,
+        });
       }
     } catch (error) {
-      console.log(error);
+      console.log(error as any);
       process.exit();
     }
   }

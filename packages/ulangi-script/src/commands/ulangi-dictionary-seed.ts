@@ -150,8 +150,17 @@ async function exec(): Promise<void> {
           assertExists(awsConfig.credentials)
         );
 
-        fileStream.pipe(converter.stdin);
-        converter.stdout.pipe(uploader.stdin);
+        if (converter.stdin) {
+          fileStream.pipe(converter.stdin);
+        } else {
+          throw new Error('converter.stdin is null');
+        }
+
+        if (converter.stdout && uploader.stdin) {
+          converter.stdout.pipe(uploader.stdin);
+        } else {
+          throw new Error('converter.stdout or uploader.stdin is null');
+        }
 
         await waitForProcessToEnd(uploader);
         console.log(`Upload ${path.basename(inputFile)} completed.`);

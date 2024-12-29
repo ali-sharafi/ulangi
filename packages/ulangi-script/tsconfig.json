@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "lib": ["es6", "es5"],
+    "lib": ["es6", "ES2020"],
+    "types": ["node"],
     "module": "commonjs",
     "noImplicitReturns": true,
     "strict": true,
@@ -10,7 +11,10 @@
     "sourceMap": false,
     "target": "es6",
     "skipLibCheck": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "aws-sdk": ["./node_modules/aws-sdk"]
+    }
   },
   "compileOnSave": true,
   "include": [
