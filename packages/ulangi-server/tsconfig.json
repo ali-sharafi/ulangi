@@ -12,7 +12,10 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "experimentalDecorators": true,
-    "typeRoots": ["./node_modules/@types", "./node_modules/@ulangi/ulangi-common/@types"]
+    "typeRoots": ["./node_modules/@types", "./node_modules/@ulangi/ulangi-common/@types"],
+    "paths": {
+      "aws-sdk": ["./node_modules/aws-sdk"]
+    }
   },
   "compileOnSave": true,
   "include": [

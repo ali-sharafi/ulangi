@@ -608,10 +608,10 @@
   resolved "https://registry.npmjs.org/@types/jest/-/jest-23.3.14.tgz"
   integrity sha512-Q5hTcfdudEL2yOmluA1zaSyPbzWPmJ3XfSWeP3RyoYvS9hnje1ZyagrZOuQ6+1nQC1Gw+7gap3pLNL3xL6UBug==
 
-"@types/joi@^13.0.8":
-  version "13.6.3"
-  resolved "https://registry.npmjs.org/@types/joi/-/joi-13.6.3.tgz"
-  integrity sha512-n5tDa0/3MUtHsA2fVH+emDfGQkPramIpWaOvWS+7C/Yq7bn2j979RAIy9pbl4F4hSE5lwjgBXhJN019DP+3ofg==
+"@types/joi@^14.3.3":
+  version "14.3.4"
+  resolved "https://registry.npmjs.org/@types/joi/-/joi-14.3.4.tgz"
+  integrity sha512-1TQNDJvIKlgYXGNIABfgFp9y0FziDpuGrd799Q5RcnsDu+krD+eeW/0Fs5PHARvWWFelOhIG2OPCo6KbadBM4A==
 
 "@types/js-yaml@^3.11.1":
   version "3.12.10"
@@ -947,7 +947,7 @@
     "@ulangi/wiktionary-core" "^2.2.1"
     autobind-decorator "^2.4.0"
     immutable "^4.0.0-rc.9"
-    lodash "^4.17.5"
+    lodash "^4.17.21"
     moment "^2.22.2"
     redux "^3.7.2"
     uuid "^3.2.1"
@@ -1632,7 +1632,7 @@ available-typed-arrays@^1.0.7:
   dependencies:
     possible-typed-array-names "^1.0.0"
 
-aws-sdk@^2.242.1:
+aws-sdk@^2.254.1:
   version "2.1692.0"
   resolved "https://registry.npmjs.org/aws-sdk/-/aws-sdk-2.1692.0.tgz"
   integrity sha512-x511uiJ/57FIsbgUe5csJ13k3uzu25uWQE+XqfBis/sB0SFoiElJWXRkgEAUh0U6n40eT3ay5Ue4oPkRMu1LYw==

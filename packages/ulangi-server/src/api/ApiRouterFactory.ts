@@ -7,7 +7,7 @@
 
 import { ErrorCode } from '@ulangi/ulangi-common/enums';
 import * as bodyParser from 'body-parser';
-import * as cors from 'cors';
+import cors from 'cors';
 import * as express from 'express';
 
 import { AuthenticatorFacade } from '../facades/AuthenticatorFacade';

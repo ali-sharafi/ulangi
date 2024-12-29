@@ -15,7 +15,7 @@ import {
 import * as appRoot from 'app-root-path';
 import * as AWS from 'aws-sdk';
 import chalk from 'chalk';
-import * as express from 'express';
+import express from 'express';
 import * as passport from 'passport';
 import * as path from 'path';
 
