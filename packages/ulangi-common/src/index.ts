@@ -8,7 +8,7 @@
 import { convertToComparableVersion } from './utils/convertToComparableVersion';
 
 // Use require here because packagejson fall outside of root dir
-// eslint-disable-next-line
+ 
 const pk = require('../package.json');
 
 export const currentComparableCommonVersion = convertToComparableVersion(

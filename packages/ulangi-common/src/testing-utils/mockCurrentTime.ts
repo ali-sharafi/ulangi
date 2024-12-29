@@ -5,7 +5,7 @@
  * See LICENSE or go to https://www.gnu.org/licenses/gpl-3.0.txt
  */
 
-import * as moment from 'moment';
+import moment from 'moment';
 
 // This function return a restore function so that you can use to restore Date.now
 export function mockCurrentTime(time?: Date): () => void {

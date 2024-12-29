@@ -5,7 +5,7 @@
  * See LICENSE or go to https://www.gnu.org/licenses/gpl-3.0.txt
  */
 
-import * as moment from 'moment';
+import moment from 'moment';
 
 import { VocabularyBuilder } from '../../builders/VocabularyBuilder';
 import { Feedback } from '../../enums/Feedback';

@@ -42,7 +42,7 @@ export abstract class ExtraFieldParser<
                 value,
               ];
             } else {
-              (capturedValues[key] as readonly string[][]) = [value];
+              (capturedValues[key] as unknown as readonly string[][]) = [value];
             }
 
             cursor = cursor + content.length + 2;
@@ -92,7 +92,7 @@ export abstract class ExtraFieldParser<
                 ...(capturedValues[key] as readonly string[][]),
               ];
             } else {
-              (capturedValues[key] as readonly string[][]) = [value];
+              (capturedValues[key] as unknown as readonly string[][]) = [value];
             }
 
             cursor = cursor - content.length - 2;

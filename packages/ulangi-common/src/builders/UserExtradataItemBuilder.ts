@@ -7,7 +7,7 @@
 
 import { DeepPartial } from '@ulangi/extended-types';
 import * as _ from 'lodash';
-import * as moment from 'moment';
+import moment from 'moment';
 
 import { UserExtraDataItem } from '../types/UserExtraDataItem';
 

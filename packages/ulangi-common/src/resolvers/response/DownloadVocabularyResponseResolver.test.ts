@@ -5,7 +5,7 @@
  * See LICENSE or go to https://www.gnu.org/licenses/gpl-3.0.txt
  */
 
-import * as _ from 'lodash';
+import _ from 'lodash';
 
 import { VocabularyBuilder } from '../../builders/VocabularyBuilder';
 import { DownloadVocabularyResponseResolver } from './DownloadVocabularyResponseResolver';

@@ -10,10 +10,10 @@ import { Transaction } from '@ulangi/sqlite-adapter';
 type ScopeFn = (scope: (tx: Transaction) => void) => Promise<Transaction>;
 
 export function mockTransaction(tx: Transaction): jest.Mock<ScopeFn> {
-  return jest.fn(
+  return (jest.fn(
     async (scope: (tx: Transaction) => void): Promise<Transaction> => {
       scope(tx);
       return tx;
     }
-  );
+  ) as unknown) as jest.Mock<ScopeFn>;
 }

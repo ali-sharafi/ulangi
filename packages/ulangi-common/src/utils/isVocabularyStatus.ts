@@ -5,10 +5,10 @@
  * See LICENSE or go to https://www.gnu.org/licenses/gpl-3.0.txt
  */
 
-import * as _ from 'lodash';
+import _ from 'lodash';
 
 import { VocabularyStatus } from '../enums/VocabularyStatus';
 
 export function isVocabularyStatus(value: any): value is VocabularyStatus {
-  return _.includes(_.values(VocabularyStatus), value);
+  return _.includes(Object.values(VocabularyStatus), value);
 }
