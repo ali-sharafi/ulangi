@@ -26,7 +26,10 @@ export class PurchasedItemConverter {
         : moment(_.get(purchasedItem, 'purchaseDateMs')).toDate(),
       originalTransactionId: purchasedItem.originalTransactionId || null,
       originalPurchaseDate: _.has(purchasedItem, 'originalPurchaseDateMs')
-        ? moment(_.get(purchasedItem, 'originalPurchaseDateMs')).toDate()
+        ? moment(_.get(
+            purchasedItem,
+            'originalPurchaseDateMs'
+          ) as moment.MomentInput).toDate()
         : null,
       cancellationDate:
         typeof purchasedItem.cancellationDate !== 'undefined' &&

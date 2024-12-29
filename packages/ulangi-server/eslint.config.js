@@ -2,7 +2,7 @@ module.exports = [
     {
       files: ["**/*.ts"],
       languageOptions: {
-        parser: "@typescript-eslint/parser", // Use TypeScript parser
+        parser: require("@typescript-eslint/parser"), // Use TypeScript parser
         parserOptions: {
           ecmaVersion: 2020, // Allow modern ECMAScript features
           sourceType: "script", // Use CommonJS

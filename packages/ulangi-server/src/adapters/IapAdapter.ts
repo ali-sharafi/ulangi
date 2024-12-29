@@ -48,7 +48,6 @@ export class IapAdapter {
   }
 
   public async setup(): Promise<void> {
-    // eslint-disable-next-line
     const googleServiceAccount = require(path.join(
       appRoot.toString(),
       this.playStoreServiceAccountPath

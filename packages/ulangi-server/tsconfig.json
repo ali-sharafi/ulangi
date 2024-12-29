@@ -9,6 +9,7 @@
     "outDir": "dist",
     "rootDir": "src",
     "sourceMap": true,
+    "esModuleInterop": true,
     "skipLibCheck": true,
     "experimentalDecorators": true,
     "typeRoots": ["./node_modules/@types", "./node_modules/@ulangi/ulangi-common/@types"]

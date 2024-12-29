@@ -69,10 +69,10 @@ export class GetDictionaryEntryController extends ApiController<
       dictionaryEntry = await this.dictionary.getDictionaryEntry(
         languageCodePair,
         stopword
-          .removeStopwords(
-            searchTerm.split(delimiter),
-            _.get(stopword, searchTermLanguageCode)
-          )
+          .removeStopwords(searchTerm.split(delimiter), _.get(
+            stopword,
+            searchTermLanguageCode
+          ) as string[])
           .join(delimiter)
           .trim()
       );

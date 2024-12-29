@@ -27,7 +27,6 @@ export class FirebaseFacade {
     setModel: SetModel,
     vocabularyModel: VocabularyModel
   ) {
-    // eslint-disable-next-line
     const serviceAccount = require(path.join(
       appRoot.toString(),
       firebaseServiceAccountPath
@@ -59,7 +58,7 @@ export class FirebaseFacade {
           await admin.auth().getUser(userId);
           resolve(true);
         } catch (error) {
-          if (error.code === 'auth/user-not-found') {
+          if ((error as admin.FirebaseError).code === 'auth/user-not-found') {
             resolve(false);
           } else {
             reject(error);
